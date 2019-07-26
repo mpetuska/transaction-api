@@ -1,0 +1,1758 @@
+{
+  "info": {
+    "_postman_id": "b937274a-2ae5-41aa-9f4e-ed33c8a60a26",
+    "name": "transaction-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "User",
+          "item": [
+            {
+              "name": "Accounts",
+              "item": [
+                {
+                  "name": "Create Account",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n\t\"name\": \"Primary account\",\n\t\"currency\": \"EUR\",\n\t\"active\": true,\n\t\"startingBalance\": 420024.69\n}"
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}/accounts",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "users",
+                        "{{userId}}",
+                        "accounts"
+                      ]
+                    },
+                    "description": "Creates an account for the user"
+                  },
+                  "response": [
+                    {
+                      "name": "Create Account",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "name": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n\t\"name\": \"Primary account\",\n\t\"currency\": \"EUR\",\n\t\"active\": true,\n\t\"startingBalance\": 420024.69\n}"
+                        },
+                        "url": {
+                          "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}/accounts",
+                          "protocol": "http",
+                          "host": [
+                            "{{host}}"
+                          ],
+                          "port": "{{port}}",
+                          "path": [
+                            "v{{version}}",
+                            "users",
+                            "{{userId}}",
+                            "accounts"
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Date",
+                          "value": "Wed, 24 Jul 2019 08:14:58 GMT"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "30"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=UTF-8"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"description\": \"id\",\n    \"value\": 2\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Get All Accounts",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}/accounts",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "users",
+                        "{{userId}}",
+                        "accounts"
+                      ]
+                    },
+                    "description": "Retreives all accounts for the user"
+                  },
+                  "response": [
+                    {
+                      "name": "Get All Accounts",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": ""
+                        },
+                        "url": {
+                          "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}/accounts",
+                          "protocol": "http",
+                          "host": [
+                            "{{host}}"
+                          ],
+                          "port": "{{port}}",
+                          "path": [
+                            "v{{version}}",
+                            "users",
+                            "{{userId}}",
+                            "accounts"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Date",
+                          "value": "Wed, 24 Jul 2019 08:14:49 GMT"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "2"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=UTF-8"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[]"
+                    },
+                    {
+                      "name": "Get All Accounts",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": ""
+                        },
+                        "url": {
+                          "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}/accounts",
+                          "protocol": "http",
+                          "host": [
+                            "{{host}}"
+                          ],
+                          "port": "{{port}}",
+                          "path": [
+                            "v{{version}}",
+                            "users",
+                            "{{userId}}",
+                            "accounts"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Date",
+                          "value": "Wed, 24 Jul 2019 08:15:05 GMT"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "77"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=UTF-8"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n    {\n        \"id\": 2,\n        \"userId\": 2,\n        \"name\": \"Primary account\",\n        \"currency\": \"EUR\",\n        \"active\": true\n    }\n]"
+                    }
+                  ]
+                }
+              ],
+              "_postman_isSubFolder": true
+            },
+            {
+              "name": "Get User",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "users",
+                    "{{userId}}"
+                  ]
+                },
+                "description": "Retreives a single user"
+              },
+              "response": [
+                {
+                  "name": "Get User",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "users",
+                        "{{userId}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:08:49 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "26"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=UTF-8"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"id\": 2,\n    \"name\": \"John Doe\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "Update User",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"Not-John Doe\"\n}"
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "users",
+                    "{{userId}}"
+                  ]
+                },
+                "description": "Updates a user"
+              },
+              "response": [
+                {
+                  "name": "Update User",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"name\": \"Not-John Doe\"\n}"
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "users",
+                        "{{userId}}"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:09:31 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": null
+                }
+              ]
+            },
+            {
+              "name": "Delete User",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "users",
+                    "{{userId}}"
+                  ]
+                },
+                "description": "Deletes a user"
+              },
+              "response": [
+                {
+                  "name": "Delete User",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/users/{{userId}}",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "users",
+                        "{{userId}}"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:09:50 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": null
+                }
+              ]
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Create User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"John Doe\"\n}"
+            },
+            "url": {
+              "raw": "http://{{host}}:{{port}}/v{{version}}/users",
+              "protocol": "http",
+              "host": [
+                "{{host}}"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "v{{version}}",
+                "users"
+              ]
+            },
+            "description": "Creates a new user"
+          },
+          "response": [
+            {
+              "name": "Create User",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"John Doe\"\n}"
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/users",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "users"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Jul 2019 08:08:44 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "30"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"description\": \"id\",\n    \"value\": 2\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get All Users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{host}}:{{port}}/v{{version}}/users",
+              "protocol": "http",
+              "host": [
+                "{{host}}"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "v{{version}}",
+                "users"
+              ]
+            },
+            "description": "Retreives all users"
+          },
+          "response": [
+            {
+              "name": "Get All Users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/users",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "users"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Jul 2019 08:08:41 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Accounts",
+      "item": [
+        {
+          "name": "Account",
+          "item": [
+            {
+              "name": "Get Account",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "accounts",
+                    "{{accountId}}"
+                  ]
+                },
+                "description": "Retreives an account"
+              },
+              "response": [
+                {
+                  "name": "Get Account",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "accounts",
+                        "{{accountId}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:15:58 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "75"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=UTF-8"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"id\": 2,\n    \"userId\": 2,\n    \"name\": \"Primary account\",\n    \"currency\": \"EUR\",\n    \"active\": true\n}"
+                }
+              ]
+            },
+            {
+              "name": "Update Account",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"Real primary account\",\n    \"active\": true\n}"
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "accounts",
+                    "{{accountId}}"
+                  ]
+                },
+                "description": "Updates the allowed fields of the account"
+              },
+              "response": [
+                {
+                  "name": "Update Account",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"name\": \"Real primary account\",\n    \"active\": true\n}"
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "accounts",
+                        "{{accountId}}"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:16:23 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": null
+                }
+              ]
+            },
+            {
+              "name": "Delete Account",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "accounts",
+                    "{{accountId}}"
+                  ]
+                },
+                "description": "Deletes an account"
+              },
+              "response": [
+                {
+                  "name": "Delete Account",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/users/1/accounts/1",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "users",
+                        "1",
+                        "accounts",
+                        "1"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Tue, 23 Jul 2019 18:45:35 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": null
+                }
+              ]
+            },
+            {
+              "name": "Activate Account",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}/activate",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "accounts",
+                    "{{accountId}}",
+                    "activate"
+                  ]
+                },
+                "description": "Activates an account"
+              },
+              "response": [
+                {
+                  "name": "Activate Account",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}/activate",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "accounts",
+                        "{{accountId}}",
+                        "activate"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:16:41 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": null
+                }
+              ]
+            },
+            {
+              "name": "Disable Account",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}/disable",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "accounts",
+                    "{{accountId}}",
+                    "disable"
+                  ]
+                },
+                "description": "Disables the account"
+              },
+              "response": [
+                {
+                  "name": "Disable Account",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}/disable",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "accounts",
+                        "{{accountId}}",
+                        "disable"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:16:53 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": null
+                }
+              ]
+            },
+            {
+              "name": "Account Balance",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}/balance",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "accounts",
+                    "{{accountId}}",
+                    "balance"
+                  ]
+                },
+                "description": "Retreives the account's current balance"
+              },
+              "response": [
+                {
+                  "name": "Account Balance",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/accounts/{{accountId}}/balance",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "accounts",
+                        "{{accountId}}",
+                        "balance"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:15:35 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "71"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=UTF-8"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"description\": \"balance\",\n    \"value\": {\n        \"amount\": 420024.69,\n        \"currency\": \"EUR\"\n    }\n}"
+                }
+              ]
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Get All Accounts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{host}}:{{port}}/v{{version}}/accounts",
+              "protocol": "http",
+              "host": [
+                "{{host}}"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "v{{version}}",
+                "accounts"
+              ]
+            },
+            "description": "Retreives all accounts"
+          },
+          "response": [
+            {
+              "name": "Get All Accounts",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/accounts",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "accounts"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Jul 2019 08:15:23 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "77"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 2,\n        \"userId\": 2,\n        \"name\": \"Primary account\",\n        \"currency\": \"EUR\",\n        \"active\": true\n    }\n]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Transactions",
+      "item": [
+        {
+          "name": "Transaction",
+          "item": [
+            {
+              "name": "Terminate Transaction",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/transactions/{{transactionId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "transactions",
+                    "{{transactionId}}"
+                  ]
+                },
+                "description": "Attempts to terminate the pending transaction"
+              },
+              "response": []
+            },
+            {
+              "name": "Get Transaction",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/transactions/{{transactionId}}",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "transactions",
+                    "{{transactionId}}"
+                  ]
+                },
+                "description": "Retrieves a transaction"
+              },
+              "response": [
+                {
+                  "name": "Get Transaction [Insufficient Funds]",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/transactions/2",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "transactions",
+                        "2"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Tue, 23 Jul 2019 21:24:07 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "274"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=UTF-8"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"id\": 2,\n    \"senderAccountId\": 1,\n    \"receiverAccountId\": 2,\n    \"senderCurrency\": \"EUR\",\n    \"receiverCurrency\": \"EUR\",\n    \"sentAmount\": 420.69,\n    \"status\": \"TERMINATED\",\n    \"issueDate\": \"2019-07-24T00:00:00.000+03:00\",\n    \"completionDate\": \"2019-07-24T00:00:00.000+03:00\",\n    \"completionMessage\": \"Insufficient funds\"\n}"
+                },
+                {
+                  "name": "Get Transaction",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://{{host}}:{{port}}/v{{version}}/transactions/{{transactionId}}",
+                      "protocol": "http",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "port": "{{port}}",
+                      "path": [
+                        "v{{version}}",
+                        "transactions",
+                        "{{transactionId}}"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Date",
+                      "value": "Wed, 24 Jul 2019 08:20:14 GMT"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "263"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=UTF-8"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n    \"id\": 2,\n    \"senderAccountId\": 1,\n    \"receiverAccountId\": 3,\n    \"senderCurrency\": \"EUR\",\n    \"receiverCurrency\": \"EUR\",\n    \"sentAmount\": 420024.69,\n    \"status\": \"SUCCESSFUL\",\n    \"issueDate\": \"2019-07-24T00:00:00.000+03:00\",\n    \"completionDate\": \"2019-07-24T00:00:00.000+03:00\",\n    \"receivedAmount\": 420024.69\n}"
+                }
+              ]
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Filter Transactions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{host}}:{{port}}/v{{version}}/transactions?receiverAccountId=3",
+              "protocol": "http",
+              "host": [
+                "{{host}}"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "v{{version}}",
+                "transactions"
+              ],
+              "query": [
+                {
+                  "key": "senderUserId",
+                  "value": "1",
+                  "description": "Filters by sender userId",
+                  "disabled": true
+                },
+                {
+                  "key": "senderAccountId",
+                  "value": "4",
+                  "description": "Filters by sender accountId",
+                  "disabled": true
+                },
+                {
+                  "key": "receiverUserId",
+                  "value": "2",
+                  "description": "Filters by receiver userId",
+                  "disabled": true
+                },
+                {
+                  "key": "receiverAccountId",
+                  "value": "3",
+                  "description": "Filters by receiver accountId"
+                },
+                {
+                  "key": "status",
+                  "value": "SUCCESSFUL",
+                  "description": "Filters by status",
+                  "disabled": true
+                },
+                {
+                  "key": "issuedAfter",
+                  "value": "2019-06-23",
+                  "description": "Filters by issue date after this",
+                  "disabled": true
+                },
+                {
+                  "key": "issuedBefore",
+                  "value": "2019-07-23",
+                  "description": "Filters by issue date before this",
+                  "disabled": true
+                },
+                {
+                  "key": "completedAfter",
+                  "value": "2019-06-23",
+                  "description": "Filters by completion date after this",
+                  "disabled": true
+                },
+                {
+                  "key": "completedBefore",
+                  "value": "2019-07-23",
+                  "description": "Filters by completion date before this",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retreives a list of transactions by given filters. At least one ID filer is required."
+          },
+          "response": [
+            {
+              "name": "Filter Transactions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/transactions?senderUserId=1&senderAccountId=4&receiverUserId=2&receiverAccountId=3&status=SUCCESSFUL&issuedAfter=2019-06-23&issuedBefore=2019-07-23&completedAfter=2019-06-23&completedBefore=2019-07-23",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "transactions"
+                  ],
+                  "query": [
+                    {
+                      "key": "senderUserId",
+                      "value": "1",
+                      "description": "Filters by sender userId"
+                    },
+                    {
+                      "key": "senderAccountId",
+                      "value": "4",
+                      "description": "Filters by sender accountId"
+                    },
+                    {
+                      "key": "receiverUserId",
+                      "value": "2",
+                      "description": "Filters by receiver userId"
+                    },
+                    {
+                      "key": "receiverAccountId",
+                      "value": "3",
+                      "description": "Filters by receiver accountId"
+                    },
+                    {
+                      "key": "status",
+                      "value": "SUCCESSFUL",
+                      "description": "Filters by status"
+                    },
+                    {
+                      "key": "issuedAfter",
+                      "value": "2019-06-23",
+                      "description": "Filters by issue date after this"
+                    },
+                    {
+                      "key": "issuedBefore",
+                      "value": "2019-07-23",
+                      "description": "Filters by issue date before this"
+                    },
+                    {
+                      "key": "completedAfter",
+                      "value": "2019-06-23",
+                      "description": "Filters by completion date after this"
+                    },
+                    {
+                      "key": "completedBefore",
+                      "value": "2019-07-23",
+                      "description": "Filters by completion date before this"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Jul 2019 08:17:25 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[]"
+            },
+            {
+              "name": "Filter Transactions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://{{host}}:{{port}}/v{{version}}/transactions?receiverAccountId=3",
+                  "protocol": "http",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "port": "{{port}}",
+                  "path": [
+                    "v{{version}}",
+                    "transactions"
+                  ],
+                  "query": [
+                    {
+                      "key": "senderUserId",
+                      "value": "1",
+                      "description": "Filters by sender userId",
+                      "disabled": true
+                    },
+                    {
+                      "key": "senderAccountId",
+                      "value": "4",
+                      "description": "Filters by sender accountId",
+                      "disabled": true
+                    },
+                    {
+                      "key": "receiverUserId",
+                      "value": "2",
+                      "description": "Filters by receiver userId",
+                      "disabled": true
+                    },
+                    {
+                      "key": "receiverAccountId",
+                      "value": "3",
+                      "description": "Filters by receiver accountId"
+                    },
+                    {
+                      "key": "status",
+                      "value": "SUCCESSFUL",
+                      "description": "Filters by status",
+                      "disabled": true
+                    },
+                    {
+                      "key": "issuedAfter",
+                      "value": "2019-06-23",
+                      "description": "Filters by issue date after this",
+                      "disabled": true
+                    },
+                    {
+                      "key": "issuedBefore",
+                      "value": "2019-07-23",
+                      "description": "Filters by issue date before this",
+                      "disabled": true
+                    },
+                    {
+                      "key": "completedAfter",
+                      "value": "2019-06-23",
+                      "description": "Filters by completion date after this",
+                      "disabled": true
+                    },
+                    {
+                      "key": "completedBefore",
+                      "value": "2019-07-23",
+                      "description": "Filters by completion date before this",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 24 Jul 2019 08:20:41 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "ktor-server-core/1.2.2 ktor-server-core/1.2.2"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "523"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=UTF-8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 2,\n        \"senderAccountId\": 1,\n        \"receiverAccountId\": 3,\n        \"senderCurrency\": \"EUR\",\n        \"receiverCurrency\": \"EUR\",\n        \"sentAmount\": 420024.69,\n        \"status\": \"SUCCESSFUL\",\n        \"issueDate\": \"2019-07-24T00:00:00.000+03:00\",\n        \"completionDate\": \"2019-07-24T00:00:00.000+03:00\",\n        \"receivedAmount\": 420024.69\n    },\n    {\n        \"id\": 3,\n        \"senderAccountId\": 2,\n        \"receiverAccountId\": 3,\n        \"senderCurrency\": \"EUR\",\n        \"receiverCurrency\": \"EUR\",\n        \"sentAmount\": 420.69,\n        \"status\": \"SUCCESSFUL\",\n        \"issueDate\": \"2019-07-24T00:00:00.000+03:00\",\n        \"completionDate\": \"2019-07-24T00:00:00.000+03:00\",\n        \"receivedAmount\": 420.69\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Issue Transaction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"senderAccountId\": 2,\n    \"receiverAccountId\": 3,\n    \"amount\": 420.69\n}"
+            },
+            "url": {
+              "raw": "http://{{host}}:{{port}}/v{{version}}/transactions",
+              "protocol": "http",
+              "host": [
+                "{{host}}"
+              ],
+              "port": "{{port}}",
+              "path": [
+                "v{{version}}",
+                "transactions"
+              ]
+            },
+            "description": "Issues a new transaction."
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "1ff74af2-4371-4525-a5cc-702d524d7a21",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "f1682fa3-5687-435e-887b-e37102b3d6fc",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "12fe5ab5-57cc-4de8-b18f-7f56ba87f64a",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "5b031311-efc9-48d4-8bbc-e1dd050745e9",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "e5abd79d-28cb-4743-a2a5-e3e8ab0e89d4",
+      "key": "host",
+      "value": "localhost",
+      "type": "string"
+    },
+    {
+      "id": "11d1f7eb-b163-425e-ab78-3f6355490dbf",
+      "key": "port",
+      "value": "8080",
+      "type": "string"
+    },
+    {
+      "id": "6bb9d0b6-ebe6-448f-b314-e5d3f3e21463",
+      "key": "version",
+      "value": "1",
+      "type": "string"
+    },
+    {
+      "id": "cdc25048-38d1-4aff-a700-72852b368f2b",
+      "key": "userId",
+      "value": "2",
+      "type": "string"
+    },
+    {
+      "id": "1d8c36c8-f81b-4910-ad71-acda4b4de06c",
+      "key": "accountId",
+      "value": "2",
+      "type": "string"
+    },
+    {
+      "id": "e967498e-8b18-4ce6-9354-f5f99a81ae28",
+      "key": "transactionId",
+      "value": "2",
+      "type": "string"
+    }
+  ]
+}
